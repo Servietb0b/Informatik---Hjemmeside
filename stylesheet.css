@@ -5,6 +5,16 @@
         padding: 0;
         
     }
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    display: center;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
     li, a, button {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
@@ -39,10 +49,6 @@
     }
     body{
         background-color: lightcoral;
-    }
-    h1{
-        display: center;
-        color: white;
     }
     .text1{
         color: white;
@@ -156,10 +162,11 @@ button:hover{
     height 1000px;
     margin: 5%;
     padding: 50px;
-    background-color: #111;
+    background-color: rgb(63, 63, 63, 0.95);
     color: white;
     border-radius: 20px;
 } 
+
 #box2{
     position: absolute;
     right: 0;
@@ -167,11 +174,19 @@ button:hover{
     height 1000px;
     margin: 5%;
     padding: 50px;
-    background-color: #111;
+    background-color: rgb(63, 63, 63, 0.95);
     color: white;
     border-radius: 20px;
-    justify-content: center;
 }
-.index-button{
-    
+#index-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 23px;
+}
+#box-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
