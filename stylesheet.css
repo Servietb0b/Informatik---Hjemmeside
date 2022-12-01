@@ -4,7 +4,7 @@
         box-sizing:border-box;
         margin: 0;
         padding: 0;
-    }
+}
 h1{
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
@@ -48,7 +48,7 @@ h1{
         cursor: pointer;
     }
     body{
-        
+        background-color: azure;
     }
     .text1{
         color: white;
@@ -152,15 +152,19 @@ button:hover{
 /* Slideshow css slutter her */
 
 .info-text1{
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
+}
+ul li{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #boxes{
     display: flex;
     justify-content: center;
 }
-#box1{
+#box{
     width: 600px;
     height 1000px;
     margin: 5%;
@@ -169,17 +173,9 @@ button:hover{
     color: white;
     border-radius: 20px;
     box-shadow: 4px 3px 10px #212121;
-} 
-
-#box2{
-    width: 600px;
-    height 1000px;
-    margin: 5%;
-    padding: 50px;
-    background-color: rgb(63, 63, 63, 0.95);
-    color: white;
-    border-radius: 20px;
-    box-shadow: 4px 3px 10px #212121;
+}
+#box ul{
+    height: 120px;
 }
 #index-button{
     display: block;
@@ -192,6 +188,7 @@ button:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 200px;
 }
 .footer-distributed {
   background-color: #292c2f;
