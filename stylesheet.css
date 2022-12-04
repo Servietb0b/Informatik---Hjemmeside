@@ -15,6 +15,22 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+.hvad-er-pre{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.hvad-er-pre p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.hvad-er-pre h1{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 1000;
+}
     li, a, button {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
@@ -177,6 +193,9 @@ ul li{
 #box ul{
     height: 120px;
 }
+i {
+    margin-top: 8px;
+}
 #index-button{
     display: block;
     margin-left: auto;
@@ -283,9 +302,10 @@ ul li{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #0032ff, #0088a9);
   font-family: "Poppins", sans-serif;
-}
+} 
+/* left, #a445b2, #fa4299 */
 ::selection{
   background: #fa4299;
   color: #fff;
@@ -342,7 +362,7 @@ ul li{
   left: 0;
   z-index: 0;
   border-radius: 5px;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #0032ff, #0088a9);
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 input[type="radio"]{
@@ -414,9 +434,9 @@ form .field input:focus::placeholder{
 }
 .form-inner form .pass-link a,
 .form-inner form .signup-link a{
-  color: #fa4299;
+  color: #0032ff;
   text-decoration: none;
-}
+} /* #fa4299 */
 .form-inner form .pass-link a:hover,
 .form-inner form .signup-link a:hover{
   text-decoration: underline;
@@ -433,7 +453,7 @@ form .btn .btn-layer{
   width: 300%;
   position: absolute;
   left: -100%;
-  background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(right, #0032ff, #0088a9, #0032ff, #0088a9);
   border-radius: 5px;
   transition: all 0.4s ease;;
 }
@@ -453,4 +473,90 @@ form .btn input[type="submit"]{
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    font-family: "Poppins", sans-serif;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.about_section{
+    width: 100%;
+    height: 1000;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 13%;
+    font-family: pop;
+}
+.about_img img{
+    width: 750px;
+    transform: translateY(50px);
+}
+.about_details h1{
+    font-size: 58px;
+    color: #fff;
+    position: relative;
+}
+.about_details h1::after{
+    content: " ";
+    position: absolute;
+    width: 195px;
+    height: 4px;
+    background-color: rgba(0,136,169,0.8);
+    border-radius: 5px;
+    left: 0;
+    bottom: 2px;
+}
+.about_details p{
+    font-size: 15px;
+    color: #fff;
+    max-width: 480px;
+    margin: 30px 0 45px 0;
+    line-height: 29px;
 }
